@@ -1,0 +1,16 @@
+$schema: https://azuremlschemas.azureedge.net/latest/asset.prompt.schema.json
+
+type: prompt
+version: 0.1.1
+name: irs_tax_chatbot
+display_name: IRS tax chatbot
+description: IRS tax chatbot
+
+tags:
+  modality: chat
+  task: chat-completions
+
+data_uri: ./prompt
+template_path: prompt.yaml
+
+C:\Users\alfredomesn\OneDrive - Microsoft\Documents\promptgen\azureml-assets\assets\large_language_models\prompts\chat_irs_tax_chatbot\spec.yaml
