@@ -1,0 +1,43 @@
+$schema: https://azuremlschemas.azureedge.net/latest/prompt.schema.json
+
+template: |
+  Perform aspect based sentiment analysis on the below product review.
+- Provide overall sentiment score between 0 to 5 for the review
+- Provide a sentiment polarity score between 0 to 5 for each aspect
+- Mention the top positive aspect and top negative aspect, if any
+
+Review 1: This console is an absolute beast! I finally managed to get my hands on it through the company’s invite after 2 years of the chip shortage and scalping issues. It arrived a couple days later as scheduled, no problems. Set up was simple and was kinda surprised by the weight of the console. The login process took less than 10 min, quick and easy. Installed games then instantly felt the difference. Loading times is literally insane, first time experiencing an SSD as fast as this. I also really enjoy the controller, it feels really good in the hands.  Playing games has never been better for a competitive gamer like me. Sometimes I feel like I’m cheating with how powerful this thing is for only $500. However, I do wish there were more exclusives for this console but I feel like this console will get better as time goes on.
+
+Overall sentiment score: 4.5
+Aspects with sentiment polarity score:
+- Console: 5
+- Set up : 5
+- Login process: 5
+- Loading times: 5
+- Controller: 5
+- Exclusives: 3
+
+Top positive aspect: Console
+Top negative aspect: Exclusives
+
+Review 2: This console has some great features, but it's not without its flaws. The graphics are excellent, but the load times can be frustratingly slow. The online community is active and fun to engage with, but the subscription fee is a bit steep.
+
+# optional, only add this section when the prompts have been evaluated and get best result with the setting here
+execution_settings:
+  default:
+    bestOf: 1
+    frequencyPenalty: 0
+    responseLength: 100
+    presencePenalty: 0
+    temperature: 0
+    topP: 1
+  text-davinci-003:
+    model_id: text-davinci-003
+    bestOf: 1
+    frequencyPenalty: 0
+    responseLength: 100
+    presencePenalty: 0
+    temperature: 0
+    topP: 1
+
+template_format: handlebars

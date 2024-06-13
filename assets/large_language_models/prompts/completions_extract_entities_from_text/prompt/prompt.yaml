@@ -1,0 +1,26 @@
+$schema: https://azuremlschemas.azureedge.net/latest/prompt.schema.json
+
+template: |
+  Extract the person name, company name, location and phone number from the text below.
+
+Hello. My name is Robert Smith. I’m calling from Contoso Insurance, Delaware. My colleague mentioned that you are interested in learning about our comprehensive benefits policy. Could you give me a call back at (555) 346-9322 when you get a chance so we can go over the benefits?
+
+# optional, only add this section when the prompts have been evaluated and get best result with the setting here
+execution_settings:
+  default:
+    bestOf: 1
+    frequencyPenalty: 0
+    responseLength: 150
+    presencePenalty: 0
+    temperature: 0.2
+    topP: 1
+  text-davinci-003:
+    model_id: text-davinci-003
+    bestOf: 1
+    frequencyPenalty: 0
+    responseLength: 150
+    presencePenalty: 0
+    temperature: 0.2
+    topP: 1
+
+template_format: handlebars

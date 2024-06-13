@@ -1,0 +1,27 @@
+$schema: https://azuremlschemas.azureedge.net/latest/prompt.schema.json
+
+template: |
+  Write a product launch email for new AI-powered headphones that are priced at $79.99 and available at Best Buy, Target and Amazon.com. The target audience is tech-savvy music lovers and the tone is friendly and exciting.
+
+1. What should be the subject line of the email?
+2. What should be the body of the email?
+
+# optional, only add this section when the prompts have been evaluated and get best result with the setting here
+execution_settings:
+  default:
+    bestOf: 1
+    frequencyPenalty: 0
+    responseLength: 350
+    presencePenalty: 0
+    temperature: 1
+    topP: 1
+  text-davinci-003:
+    model_id: text-davinci-003
+    bestOf: 1
+    frequencyPenalty: 0
+    responseLength: 350
+    presencePenalty: 0
+    temperature: 1
+    topP: 1
+
+template_format: handlebars

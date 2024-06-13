@@ -1,0 +1,15 @@
+$schema: https://azuremlschemas.azureedge.net/latest/asset.prompt.schema.json
+
+type: prompt
+version: 0.0.1
+name: analyze_sentiment_with_aspects
+display_name: Analyze sentiment with aspects
+description: Analyze sentiment with aspects
+
+tags:
+  modality: completion
+  task: content-creation
+
+data_uri: ./prompt
+template_path: prompt.yaml
+

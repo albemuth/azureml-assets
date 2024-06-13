@@ -1,0 +1,15 @@
+$schema: https://azuremlschemas.azureedge.net/latest/asset.prompt.schema.json
+
+type: prompt
+version: 0.0.1
+name: summarize_key_points_from_financial_report_extractive
+display_name: Summarize key points from financial report (extractive)
+description: Summarize key points from financial report (extractive)
+
+tags:
+  modality: completion
+  task: summarization
+
+data_uri: ./prompt
+template_path: prompt.yaml
+

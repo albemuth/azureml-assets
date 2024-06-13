@@ -1,0 +1,15 @@
+$schema: https://azuremlschemas.azureedge.net/latest/asset.prompt.schema.json
+
+type: prompt
+version: 0.0.1
+name: summarize_an_article_abstractive
+display_name: Summarize an article (abstractive)
+description: Summarize an article (abstractive)
+
+tags:
+  modality: completion
+  task: summarization
+
+data_uri: ./prompt
+template_path: prompt.yaml
+

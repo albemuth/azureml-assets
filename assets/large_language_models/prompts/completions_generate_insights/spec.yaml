@@ -1,0 +1,15 @@
+$schema: https://azuremlschemas.azureedge.net/latest/asset.prompt.schema.json
+
+type: prompt
+version: 0.0.1
+name: generate_insights
+display_name: Generate insights
+description: Generate insights
+
+tags:
+  modality: completion
+  task: content-creation
+
+data_uri: ./prompt
+template_path: prompt.yaml
+
